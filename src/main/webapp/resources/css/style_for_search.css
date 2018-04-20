@@ -1,0 +1,459 @@
+@font-face {
+    font-family : 'CenturyGothic';
+    src : url("/resources/content/century-gothic.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.tmp {
+    height:     50px;
+    width:      50px;
+    border-radius: 5px;
+    background-color: black;
+}
+.header {
+
+    padding-top:    10px;
+    text-align:     center;
+    color:          #ad5ba4;
+    margin-bottom:  8px;
+}
+
+.logo {
+    overflow : hidden;
+}
+
+
+/*MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU*/
+
+.login_butt {
+    margin-top : 2px;
+    margin-right : 5px;
+    float : right;
+    display : inline-block;
+    width : 50px;
+    height : 50px;
+    opacity :   0.9;
+    background-image : url("/resources/content/login_button.png");
+}
+
+login_butt:hover {
+    opacity:1;
+}
+
+.exit_butt {
+    cursor: pointer;
+    margin-top : -54px;
+    float : right;
+    width : 50px;
+    height : 50px;
+    background-image : url("/resources/content/exit.png");
+}
+
+
+.search_butt {
+    margin-right: 35%;
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    overflow: hidden;
+    transition: width .2s ease-in-out;
+    -webkit-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+}
+
+.search_butt:hover {
+    width: 168px;
+}
+
+.search_butt a {
+    margin-right : 35%;
+    display : inline-block;
+    width: 168px;
+    height: 40px;
+    font-family:        CenturyGothic;
+    color: white;
+    padding-top: 14px;
+    text-decoration: none;
+    text-indent: 39px;
+}
+
+.search_butt a:hover {
+    background-color: #8e3985;
+}
+.search_butt a::before{
+    background: url("/resources/content/search_butt.png") center no-repeat;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    top: 214px;
+    margin-left: -60px;
+}
+
+
+.fav_butt {
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    overflow: hidden;
+    transition: width .2s ease-in-out;
+    -webkit-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+}
+
+.fav_butt:hover {
+    width: 168px;
+}
+
+.fav_butt a {
+    display : inline-block;
+    width: 185px;
+    height: 40px;
+    font-family:        CenturyGothic;
+    color: white;
+    padding-top: 14px;
+    text-decoration: none;
+    text-indent: 39px;
+}
+
+.fav_butt a:hover {
+    background-color: #8e3985;
+}
+
+
+.fav_butt a::before{
+    background: url("/resources/content/fav_butt.png") center no-repeat;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    top: 214px;
+    margin-left: -60px;
+}
+.login {
+    border : 0px;
+    opacity : 0.6;
+    float :         right;
+    margin-right :  5px;
+    width :         620px;
+    height :        30px;
+    padding-left:   60px;
+    padding-top :   10px;
+    border-radius : 10px;
+    font-family : CenturyGothic;
+    color: white;
+    background-color: #d0d0d0;
+    margin-top :    5px;
+
+}
+
+.menu {
+    height: 54px;
+    text-decoration:    none;
+    margin-top:         3px;
+    margin-bottom:      3px;
+    background-color:   #ad5ba4;
+}
+
+
+a{
+
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.dots {
+    height :            15px;
+    width:              100%;
+    background-image: url("../menu_dots.png");
+}
+
+.instruction {
+    font-family :CenturyGothic;
+    font-size :     20px;
+    color: #a8a8a8;
+}
+
+
+
+
+
+
+
+@keyframes example {
+    100%     { background-color : white;}
+}
+
+
+.tmp {
+    height : 50px;
+    width : 50px;
+    background-color: black;
+
+    animation : example 2s forwards;
+
+}
+
+
+.hide-checkbox + label {
+    display: inline-block;
+    font-size: 20px;
+    opacity : 0.5;
+    text-align: center;
+    background-color: #a0a0a0;
+    font-family: CenturyGothic;
+    color: #000000;
+
+    padding-left :      15px;
+    padding-right :     15px;
+    padding-top :       5px;
+    padding-bottom :    3px;
+
+    margin-left: 5px;
+    margin-top : 5px;
+
+    border-radius: 10px;
+
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+
+    cursor :            pointer;
+}
+
+.hide-checkbox + label:hover{
+    background-color: #ca6dc0;
+    color:            #b4ffa5;
+}
+.hide-checkbox + label:active {
+    background-color: #82de6f;
+    color : white;
+}
+
+.hide-checkbox:checked + label {
+    display: inline-block;
+    background-color:   #ad5ba4;
+    color :             white;
+    opacity :           1;
+}
+
+
+input[type='checkbox']{
+    display : none;
+}
+
+
+.tags{
+    margin-top : 50px;
+    padding-left :          10%;
+    padding-right :         10%;
+    margin-bottom : 50px;
+}
+
+/*=================================================================*/
+.separator {
+    height : 2px;
+    border-radius : 2px;
+    width : auto;
+    background-color: black;
+    opacity : 0.3;
+}
+
+
+
+
+
+
+
+
+
+/*BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON */
+
+@keyframes readysearch {
+    100% {background-color : #ef7fe3; }
+}
+
+.getit{
+    margin-top : 50px;
+    padding-top : 50px;
+    padding-left : 10%;
+}
+
+
+.button{
+    margin: 0 auto;
+    display : table;
+    height: 82px;
+    width:  266px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 60px;
+    background-color :          #ad5ba4;
+    font-family: CenturyGothic;
+    font-size: 60px;
+    cursor: pointer;
+
+}
+
+.button:hover{
+
+    /*    background-image:   url("../get2.png");*/
+    animation : readysearch 0.2s forwards;
+}
+
+input[type='submit']
+{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.popular {
+    color:              white;
+    margin-top:             40px;
+    display:                inline-block;
+    background-color:       #ad5ba4;
+    border-radius :         5px;
+    min-width :             120px;
+    padding-right:          20px;
+    margin-left:            10%;
+    margin-right: 10%;
+    float :                 right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot{
+    float : right;
+    margin-top :            90px;
+    bottom:                 10px;
+    width:                  100%;
+    height:                 150px;
+    background-color:       #ad5ba4;
+    color:                  white;
+    padding-left :          10%;
+}
+
+.nonchosen_tag {
+    font-size  :        20px;
+    margin-top :        5px;
+    margin-bottom:      5px;
+    margin-left :       20px;
+
+    display:            inline-block;
+    font-family:        CenturyGothic;
+    border-radius:      10px;
+    height :            30px;
+
+    padding-left:       10px;
+    padding-right:      10px;
+    padding-top :       7px;
+}
+
+.nonchosen_tag:hover{
+    background-color: #ca6dc0;
+    color:            #b4ffa5;
+}
+.nonchosen_tag:active {
+    background-color: #82de6f;
+    color : white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.get_new_tag {
+    margin-top: 30px;
+}
+
+.new_tag_input_button {
+    display : inline-block;
+    padding-top :       7px;
+    padding-left:       15px;
+    color :             black;
+    font-size:          30px;
+    width :             35px;
+    height :            45px;
+    border-radius:      5px;
+    background-color:   azure;
+
+}
+.new_tag_input_button:hover {
+    background-color:   #e1e1e1;
+    color : #393939;
+}
+.new_tag_input_button:active {
+    background-color:   #82de6f;
+    color : white;
+}
+
+.new_tag_text {
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right:10px;
+    margin-left : 10%;
+}
+
+@media only screen and (max-width: 810px){
+    img{
+        width: 400px;
+    }
+    .search_butt a::before {
+        top: 120px;
+    }
+    .fav_butt a::before {
+        top: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 534px) {
+    .search_butt:hover {
+        width: 61px;
+    }
+    .fav_butt:hover {
+        width: 60px;
+    }
+    .search_butt a:hover {
+        text-indent: 28px;
+    }
+    .fav_butt a:hover {
+        text-indent: 28px;
+    }
+}

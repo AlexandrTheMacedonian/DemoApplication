@@ -1,0 +1,282 @@
+@font-face {
+    font-family : 'CenturyGothic';
+    src : url("/resources/content/century-gothic.ttf");
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.tmp {
+    height:     50px;
+    width:      50px;
+    border-radius: 5px;
+    background-color: black;
+}
+.header {
+    
+    padding-top:    10px;
+    text-align:     center;
+    color:          #ad5ba4;
+    margin-bottom:  8px;
+}
+
+.logo {
+    overflow : hidden;
+}
+
+
+/*=======================================================*/
+/*COL WRAPPER*/
+
+@keyframes colfocus {
+    100% {background-color: #ad5ba4;}
+}
+
+.tmp:hover {
+    opacity : 1;
+}
+
+.col_wrapper {
+    margin-right : 5px;
+    margin-bottom : 5px;
+    padding: 5px;
+    display : inline-block;
+    
+}
+
+.col_wrapper:hover {
+    animation : colfocus .5s forwards;
+}
+
+
+
+
+
+
+
+/*=======================================================*/
+.content{
+    margin: 55px auto auto;
+    height:         90%;
+    max-width:      1100px;
+    text-align: center;
+}
+
+
+
+
+/*MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU*/
+
+.login_butt {
+    margin-top : 2px;
+    margin-right : 5px;
+    float : right;
+    display : inline-block;
+    width : 50px;
+    height : 50px;
+    opacity :   0.9;
+    background-image : url("/resources/content/login_button.png");
+}
+
+login_butt:hover {
+    opacity:1;
+}
+
+.exit_butt {
+    cursor: pointer;
+    margin-top : -57px;
+    float : right;
+    width : 50px;
+    height : 50px;
+    background-image : url("/resources/content/exit.png");
+}
+
+.search_butt {
+    margin-right : 35%;
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    overflow: hidden;
+    transition: width .2s ease-in-out;
+    -webkit-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+}
+
+.search_butt:hover {
+    width: 168px;
+}
+
+.search_butt a {
+    margin-right : 35%;
+    display : inline-block;
+    width: 168px;
+    height: 40px;
+    font-family:        CenturyGothic;
+    color: white;
+    padding-top: 14px;
+    text-decoration: none;
+    text-indent: 39px;
+}
+
+.search_butt a:hover {
+    background-color: #8e3985;
+}
+.search_butt a::before{
+    background: url("/resources/content/search_butt.png") center no-repeat;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    top: 214px;
+    margin-left: -60px;
+}
+
+
+.fav_butt {
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    overflow: hidden;
+    transition: width .2s ease-in-out;
+    -webkit-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+}
+
+.fav_butt:hover {
+    width: 168px;
+}
+
+.fav_butt a {
+    display : inline-block;
+    width: 185px;
+    height: 40px;
+    font-family:        CenturyGothic;
+    color: white;
+    padding-top: 14px;
+    text-decoration: none;
+    text-indent: 39px;
+}
+
+.fav_butt a:hover {
+    background-color: #8e3985;
+}
+
+
+.fav_butt a::before{
+    background: url("/resources/content/fav_butt.png") center no-repeat;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    top: 214px;
+    margin-left: -60px;
+}
+
+
+
+
+
+
+
+
+
+.login {
+    border : 0px;
+    opacity : 0.6;
+    float :         right;
+    margin-right :  5px;
+    width :         620px;
+    height :        30px;
+    padding-left:   60px;
+    padding-top :   10px;
+    border-radius : 10px;
+    font-family : CenturyGothic;
+    color: white;
+    background-color: #d0d0d0;
+    margin-top :    5px;
+    
+}
+
+.menu {
+    height: 54px;
+    text-decoration:    none;
+    margin-top:         3px;
+    margin-bottom:      3px;
+    background-color:   #ad5ba4;
+}
+
+
+.menu_item a{
+    color:              white;
+    text-decoration:    none;
+    font-size:          24px;
+}
+/*===================================================================*/
+
+
+.dots {
+    height :            15px;
+    width:              100%;
+    background-image: url("menu_dots.png");
+}
+
+.image-wrapper {
+    display:inline-block;
+    position:relative;
+ }
+   
+.image-wrapper img {
+    vertical-align:top;
+ }
+   
+.image-text {
+    display:none;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:rgba(0,0,0, 0.7);
+    color:#FFF;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+ }
+   
+.image-wrapper:hover .image-text {
+    display:block;
+ }
+
+
+@media only screen and (max-width: 810px){
+    img{
+        width: 400px;
+    }
+    .search_butt a::before {
+        top: 120px;
+    }
+    .fav_butt a::before {
+        top: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 534px) {
+    .search_butt:hover {
+        width: 61px;
+    }
+    .fav_butt:hover {
+        width: 60px;
+    }
+    .search_butt a:hover {
+        text-indent: 28px;
+    }
+    .fav_butt a:hover {
+        text-indent: 28px;
+    }
+}
